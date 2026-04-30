@@ -48,7 +48,7 @@ const scheme = new BatchSettlementEvmScheme(signer, {
 ## Setup
 
 ```bash
-cp .env-local .env
+cp .env-example .env
 # fill EVM_PRIVATE_KEY (and optionally EVM_VOUCHER_SIGNER_PRIVATE_KEY)
 
 cd ../../
@@ -57,6 +57,8 @@ cd clients/batch-settlement
 
 pnpm start
 ```
+
+Env keys match `examples/go/clients/batch-settlement/.env.example` for cross-SDK tests (this dir uses `.env-example`; Go uses `.env.example`).
 
 ## Environment
 
